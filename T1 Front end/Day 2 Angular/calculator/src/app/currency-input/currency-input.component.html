@@ -1,0 +1,46 @@
+<div class="card">
+    <div>
+      <input id="amt" type="number" placeholder="Enter amount" required [formControl]="amount">
+    </div>
+
+    <div class="select-currency">
+      <div>
+        <span>From</span>
+        <select name="fromCurrency" id="dropDown" [formControl]="fromCurrency">
+          <!-- <option value="">Select</option> -->
+          <option value="rupee" selected> Rupee </option>
+          <option value="usDollar"> US Dollar </option>
+          <option value="pound"> Pound </option>
+          <option value="uaeDinar"> UAE Dinar</option>
+          <option value="chineseYuan">Chinese Yuan</option>
+          <option value="indonesianRupiah">Indonesian Rupiah </option>
+        </select>
+      </div>
+  
+      <div>
+          <span>To</span>
+          <select name="toCurrency" id="dropDown" [formControl]="toCurrency">
+            <!-- <option value="">Select</option> -->
+            <!-- <option *ngFor="let c of currency | keyvalue" [ngValue]="c" > {{c.key}} </option> -->
+            <option value="rupee" selected> Rupee </option>
+            <option value="usDollar"> US Dollar </option>
+            <option value="pound"> Pound </option>
+            <option value="uaeDinar"> UAE Dinar</option>
+            <option value="chineseYuan">Chinese Yuan</option>
+            <option value="indonesianRupiah">Indonesian Rupiah </option>
+          </select>
+        </div>
+    </div>
+    
+      <div class="btn" (click)="convert()">
+        Convert
+      </div>
+      
+      <div class="result">
+        {{result}}
+      </div>
+  </div>
+
+
+
+  

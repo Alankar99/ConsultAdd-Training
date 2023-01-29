@@ -1,0 +1,15 @@
+<div class="main"> 
+    <div class="heading">
+        Birth Day Sort
+    </div>
+    <div class="table" *ngIf="tableData != null">
+        <table>
+            <th>Birth Date</th>
+            <th>Name</th>
+
+            <tr *ngFor="let j of tableData">
+                <td *ngFor="let k of j | keyvalue"> {{k.value}} </td>
+            </tr>
+        </table>
+    </div>
+</div>

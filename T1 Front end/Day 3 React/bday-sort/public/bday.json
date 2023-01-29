@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "birthDate" : "30/06/1999",
+        "name":"Mikasa"
+    },
+    {
+        "id":2,
+        "birthDate" : "22/06/1999",
+        "name":"Erennnnn Jeaaaagerr"
+    },
+    {
+        "id":3,
+        "birthDate" : "15/06/2000",
+        "name":"Hange"
+    },
+    {
+        "id":4,
+        "birthDate" : "08/06/2009",
+        "name":"Commander Erwin"
+    },
+    {
+        "id":5,
+        "birthDate" : "3/12/1989",
+        "name":"Riener"
+    },
+    {
+        "id":6,
+        "birthDate" : "12/5/1996",
+        "name":"Berdtdhohldltoltdto"
+    }
+]

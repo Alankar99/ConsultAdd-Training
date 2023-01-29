@@ -1,0 +1,46 @@
+.card
+{
+    background: linear-gradient(90deg, hsla(316, 84%, 68%, 1) 0%, hsla(0, 100%, 63%, 1) 100%);
+    font-size: large;
+    width: 80vw;
+    min-width: 150px;
+}
+
+.form
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding: 2px;
+}
+
+#btn
+{
+    display: block;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(64, 0, 255);
+    color: white;
+    font-size: large;
+    border: none;
+}
+
+.submit
+{
+    align-items: center;
+    width: inherit;
+
+    display: flex;
+    justify-content: center;
+}
+
+#sort
+{
+    text-align: center;
+}
+
+#b
+{
+    display: flex;
+    align-items: center;
+}

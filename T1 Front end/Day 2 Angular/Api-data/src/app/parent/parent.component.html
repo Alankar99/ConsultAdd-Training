@@ -1,0 +1,58 @@
+<div class="main">
+    <h1>This is parent Component</h1>
+    <app-child [dataMyObj] = "myObj" (transferEvent)="getData($event)"></app-child>
+    
+    
+    <div class="table">
+        <table *ngIf="dataFromMyDataObj != null">
+            <th  *ngFor="let i of dataFromMyDataObj[0] | keyvalue" bgcolor="#008000" >{{i.key}}</th>
+            
+            <tr *ngFor="let j of dataFromMyDataObj">
+                <td *ngFor="let k of j | keyvalue" bgcolor="91600">{{k.value}}</td>
+            </tr>
+        </table>
+    </div>
+        
+</div>
+
+<!-- <div class="table">
+    {{tableHtml}}
+</div> -->
+
+
+
+
+
+
+
+
+<!-- 
+
+<div class="table" id="tableid">yuyuyuyuy</div>
+<table>
+    <th>userId</th>
+    <th>id</th>
+    <th>title</th>
+    <th>body</th>
+
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>t1</td>
+        <td>b1</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>t2</td>
+        <td>b2</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>t3</td>
+        <td>b3</td>
+    </tr>
+</table> -->

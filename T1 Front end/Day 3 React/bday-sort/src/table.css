@@ -1,0 +1,42 @@
+.main
+{
+    padding: 5px;
+}
+.table
+{
+    background-color: rgba(255, 255, 255, 0.338);
+    color: white;
+    
+    font-size: xx-large;
+    /* outline: auto; */
+    border: 1px solid rgba(255, 255, 255, 0.386);
+    border-width: 0px 0px 2px 2px;
+}
+table
+{
+    border-collapse: collapse;
+}
+
+.heading
+{
+    background-color: black;
+    height: 10vh;
+    color: rgb(218, 198, 249);
+    font-size: xx-large;
+    text-align: center;
+    justify-items:center;
+    padding: 15px;
+}
+
+th , td
+{
+    display: inline-block;
+    width: 40vw;
+    min-width:150px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 255, 0.183);
+    /* background-color: black; */
+    color: blue;
+    text-align: center;
+}
+

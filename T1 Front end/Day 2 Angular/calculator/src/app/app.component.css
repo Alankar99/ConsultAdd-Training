@@ -1,0 +1,31 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main
+{
+    /* outline: auto; */
+    background-color: #023047;
+
+    /* color: #FFB703;
+    font-size: xx-large; */
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 50px;
+    flex-direction: column;
+
+}
+
+#header
+{
+    color: #FFB703;
+    font-size: 80px;
+    text-align: center;
+    /* outline: auto; */
+}

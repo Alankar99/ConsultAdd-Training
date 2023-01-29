@@ -1,0 +1,22 @@
+<div class="card">
+    <div id="sort">Sort By</div>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+       <div class="form">
+
+        <div id="b">
+            <label for="name">Name</label>
+            <input type="radio" value="0" id="name" formControlName="sortBy">
+        </div>
+        
+        <div id="b">
+            <label for="age">Birth Date</label>
+            <input type="radio" value="1" id="age" formControlName="sortBy">
+        </div>
+       </div>
+        
+       <div class="submit">
+           <input id="btn" type="submit" value="Sort"> 
+       </div>
+    </form>
+</div>

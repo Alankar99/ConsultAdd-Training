@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+*
+{
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-family: 'Raleway', sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

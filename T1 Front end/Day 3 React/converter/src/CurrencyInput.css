@@ -1,0 +1,107 @@
+
+.card
+{
+    /* outline: auto; */
+
+    background-color: #FFB703;
+    height: 50vh;
+    width: 50vw;
+
+    margin: 10vh;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
+    flex-direction: column;
+
+    color: #023047;
+
+}
+
+@media (min-width: 991px) {
+    .select-currency
+{
+    /* outline: auto; */
+    width: 30vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px; */
+}    
+}
+
+.dropDown
+{
+    height: 40px;
+    max-width: 10vw;
+    min-width: 96px;
+    border: 2px solid #023047;
+    background-color: #023047;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+
+    /* margin-bottom: 10px; */
+}
+span
+{
+    display: inline-block;
+    border:2px solid #023047;
+    
+    background-color: #fff;
+    font-size: x-large;
+    /* height: 40px; */
+    padding: 4.35px;
+    font-weight: 1000;
+
+    /* margin-bottom: 10px; */
+}
+
+@media (max-width : 990px){
+    .select-currency
+    {
+        /* outline: auto; */
+        /* width: 25px; */
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 50px; */
+    }
+}
+
+#amt , .result
+{
+    height: 40px;
+    width: 30vw;
+    /* border: 2px solid #023047; */
+    background-color: #023047;
+
+    text-align: center;
+    color: #FFB703;
+    font-size: x-large;
+    font-weight: 1000;
+}
+
+.btn
+{
+    display: block;
+    height: 40px;
+    background-color: white;
+    border:2px solid #023047;
+
+    font-size: x-large;
+    font-weight: 1000;
+    padding:5px 15px;
+
+    /* text-align: center; */
+}
+.btn:hover
+{
+    background-color: #023047;
+    color: #fff;
+}
