@@ -17,23 +17,23 @@ public class StudentController {
         return this.studentService.getStudents();
     }
 
-    @GetMapping("/studentbyid/{id}")
-    public Student getStudentById(@PathVariable int id){
-        return studentService.getStudentById(id);
+    @PostMapping("/createstudent")
+    public String createStudent(@RequestBody Student student){
+        return this.studentService.createStudent(student);
     }
-    
+
     @DeleteMapping("/delete/{id}")
     public String deleteStudent(@PathVariable int id){
         return studentService.deleteStudent(id);
     }
-    
+
     @PutMapping("/updatestudent")
-    public Student updateStudent(@RequestBody Student student){
+    public Student updateStudent(@RequestBody Student student) throws Exception {
         return studentService.updateStudent(student);
     }
-    
-    @PostMapping("/createstudent")
-    public String createStudent(@RequestBody Student student){
-        return this.studentService.createStudent(student);
+
+    @GetMapping("/studentbyid/{id}")
+    public Student getStudentById(@PathVariable int id) throws Exception {
+        return studentService.getStudentById(id);
     }
 }
