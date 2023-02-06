@@ -18,12 +18,12 @@ public class StudentController {
     }
 
     @PostMapping("/createstudent")
-    public String createStudent(@RequestBody Student student){
+    public String createStudent(@RequestBody Student student) throws Exception {
         return this.studentService.createStudent(student);
     }
 
     @DeleteMapping("/delete/{id}")
-    public String deleteStudent(@PathVariable int id){
+    public String deleteStudent(@PathVariable int id) throws Exception {
         return studentService.deleteStudent(id);
     }
 
