@@ -1,21 +1,22 @@
 public class Main {
-    public void fun3(){
-        int div = 5/0; //unchecked exception
+    System.out.println("Start");
+    public void innerFun(){
+        int var = 999/0;
     }
-    public void fun2(){
-        fun3();
+    public void outerFun(){
+        innerFun();
     }
-    public void fun1(){
+    public void fun(){
         try{
-            fun2();
+            outerFun();
         }
         catch (Exception e){
-            System.out.println("EXCEPTION HANDLED!!");
+            System.out.println("Exception occured");
         }
     }
     public static void main(String[] args) {
         Main obj = new Main();
-        obj.fun1();
-        System.out.println("Rest program lines!");
+        obj.fun();
+        System.out.println("End");
     }
 }
